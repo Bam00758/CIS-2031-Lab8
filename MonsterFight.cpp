@@ -51,11 +51,15 @@ void fight(Monster &m1, Monster &m2){
     printMonsterStats(m2);
 }
 
-void main(){
 
-    //❓❓ Lab Question 5
-    //Add your function call here:
-    fight(monsters[1],monsters[3]);
-    //Comment out this line
-    printMonsterStats(monsters[3]);
+void main(){
+for ( int i = 0; i < 5; i++){
+    Monster a = monsters[i];
+    for ( int j = 0; j < 5; j++){
+       
+        Monster b = monsters[j];
+       if ( i != j  )
+        cout << a.name << " VS " << b.name << endl;
+    }
+}
 }
